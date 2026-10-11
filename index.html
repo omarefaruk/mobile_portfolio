@@ -70,86 +70,71 @@
                 </div>
             </section>
 
-            <!-- Wrapper for side-by-side layout -->
-            <div class="about-skills-wrapper">
+          <!--===== ABOUT & SKILLS =====-->
+            <div class="as-wrapper bd-grid">
                 <!--===== ABOUT =====-->
-                <section class="about section" id="about">
+                <section class="as-about section" id="about">
                     <h2 class="section-title">About</h2>
-                    <div>
-                        <h2 class="about__subtitle">I am Omare</h2>
-                        <p class="about__text">
-                            I'm an Android Developer from Manchester, England, with a foundation in professional web development that sparked my transition into mobile technology. After spending two years building bespoke web applications professionally, I discovered my true passion lay in Android development and the unique challenges of creating native mobile experiences.
-                            <br><br>
-                            What drives me is transforming ideas into tangible applications that people actually use in their daily lives. There's something particularly rewarding about developing software that runs natively on devices people carry everywhere—apps that solve real problems and integrate seamlessly into users' routines.
-                            <br><br>
-                            I thrive on the problem-solving aspects of development and stay current with the evolving Android ecosystem. My focus is on building modern, scalable applications using contemporary frameworks like Kotlin and Jetpack Compose, while maintaining clean architecture principles that ensure long-term maintainability and performance.
-                        </p>       
+                    <p class="as-lead">
+                        I'm an Android Developer in Manchester building apps with Kotlin and Jetpack Compose.
+                    </p>
+                    <p class="as-text">
+                        I spent two years as a Software Engineer building client web applications, then moved into Android, where I focus on Clean Architecture, MVVM and well-tested code. I'm currently developing an offline-first reading app for a startup client.
+                    </p>
+
+                    <div class="as-facts">
+                        <div class="as-fact">
+                            <span class="as-fact__value">2 yrs</span>
+                            <span class="as-fact__label">Professional software engineering</span>
+                        </div>
+                        <div class="as-fact">
+                            <span class="as-fact__value">5</span>
+                            <span class="as-fact__label">Android apps built</span>
+                        </div>
+                        <div class="as-fact">
+                            <span class="as-fact__value">MCR</span>
+                            <span class="as-fact__label">Open to London &amp; the North</span>
+                        </div>
                     </div>
                 </section>
 
                 <!--===== SKILLS =====-->
-                <section class="skills section" id="skills">
+                <section class="as-skills section" id="skills">
                     <h2 class="section-title">Skills</h2>
-                    <div>
-                        <h2 class="skills__subtitle">Professional Skills</h2>
-                        <p class="skills__text">
-                            The tools I use to build Android apps, backed by the projects below and two years of professional software engineering.
-                        </p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class="fab fa-android skills__icon"></i>
-                                <span class="skills__name">Kotlin &amp; Android SDK</span>
-                            </div>
-                        </div>
 
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class="fas fa-exchange-alt skills__icon"></i>
-                                <span class="skills__name">REST APIs (Retrofit, Ktor)</span>
-                            </div>
-                        </div>
+                    <div class="as-group">
+                        <h3 class="as-group__title">Android</h3>
+                        <ul class="as-tags">
+                            <li>Kotlin</li><li>Jetpack Compose</li><li>Coroutines &amp; Flow</li><li>Material 3</li><li>Navigation Compose</li><li>Android Views / XML</li>
+                        </ul>
+                    </div>
 
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class="fas fa-mobile-alt skills__icon"></i>
-                                <span class="skills__name">Jetpack Compose &amp; Material 3</span>
-                            </div>
-                        </div>
+                    <div class="as-group">
+                        <h3 class="as-group__title">Architecture</h3>
+                        <ul class="as-tags">
+                            <li>Clean Architecture</li><li>MVVM</li><li>Hilt</li><li>Koin</li><li>SOLID</li>
+                        </ul>
+                    </div>
 
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class="fas fa-layer-group skills__icon"></i>
-                                <span class="skills__name">Clean Architecture, MVVM &amp; Hilt</span>
-                            </div>
-                        </div>
+                    <div class="as-group">
+                        <h3 class="as-group__title">Data &amp; networking</h3>
+                        <ul class="as-tags">
+                            <li>Room</li><li>SQLDelight</li><li>DataStore</li><li>Retrofit</li><li>Ktor</li><li>REST APIs</li>
+                        </ul>
+                    </div>
 
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class="fas fa-vial skills__icon"></i>
-                                <span class="skills__name">Testing (JUnit, MockK, Compose UI)</span>
-                            </div>
-                        </div>
+                    <div class="as-group">
+                        <h3 class="as-group__title">Testing</h3>
+                        <ul class="as-tags">
+                            <li>JUnit</li><li>MockK</li><li>MockWebServer</li><li>Compose UI testing</li>
+                        </ul>
+                    </div>
 
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='fas fa-database skills__icon' ></i>
-                                <span class="skills__name">Room, SQLDelight &amp; SQL</span>
-                            </div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class="fab fa-js skills__icon"></i>
-                                <span class="skills__name">Web Development (JS/HTML/CSS)</span>
-                            </div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class="fab fa-git-alt skills__icon"></i>
-                                <span class="skills__name">Git &amp; GitHub</span>
-                            </div>
-                        </div>
+                    <div class="as-group">
+                        <h3 class="as-group__title">Tools &amp; workflow</h3>
+                        <ul class="as-tags">
+                            <li>Git &amp; GitHub</li><li>Android Studio</li><li>Gradle</li><li>Jira</li><li>Agile / Scrum</li><li>Figma</li>
+                        </ul>
                     </div>
                 </section>
             </div>

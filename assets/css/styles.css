@@ -578,3 +578,106 @@ img {
   max-width: 1000%;
   height: auto;
 }
+
+/*===== ABOUT & SKILLS (redesign) =====*/
+.as-wrapper {
+  grid-template-columns: 1fr;
+  column-gap: 4rem;
+  align-items: start;
+}
+
+.as-lead {
+  font-size: 1.25rem;
+  font-weight: var(--font-semi);
+  line-height: 1.5;
+  margin-bottom: var(--mb-2);
+}
+
+.as-text {
+  line-height: 1.7;
+  color: hsl(var(--hue-color), 15%, 35%);
+  margin-bottom: var(--mb-4);
+}
+
+.as-facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.as-fact {
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+  padding: 1rem;
+  border-radius: .75rem;
+  background-color: hsl(var(--hue-color), 89%, 97%);
+  border: 1px solid hsl(var(--hue-color), 89%, 90%);
+}
+
+.as-fact__value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--first-color);
+}
+
+.as-fact__label {
+  font-size: var(--smaller-font-size);
+  line-height: 1.4;
+  color: hsl(var(--hue-color), 15%, 35%);
+}
+
+.as-group {
+  margin-bottom: 1.5rem;
+}
+
+.as-group__title {
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-semi);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: hsl(var(--hue-color), 15%, 45%);
+  margin: 0 0 .6rem;
+}
+
+.as-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.as-tags li {
+  padding: .4rem .85rem;
+  border-radius: 999px;
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-semi);
+  background-color: #fff;
+  border: 1px solid hsl(var(--hue-color), 30%, 85%);
+  box-shadow: 0 2px 8px rgba(14, 36, 49, .06);
+  transition: border-color .2s, color .2s;
+}
+
+.as-tags li:hover {
+  border-color: var(--first-color);
+  color: var(--first-color);
+}
+
+@media screen and (min-width: 768px) {
+  .as-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .as-facts {
+    grid-template-columns: 1fr;
+  }
+  .as-fact {
+    flex-direction: row;
+    align-items: baseline;
+    gap: .75rem;
+  }
+}
